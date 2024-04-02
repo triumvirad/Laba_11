@@ -62,15 +62,15 @@ namespace ClassLibrary
         {
             Console.WriteLine($"ID: {id}, Фортепиано: Название инструмента: {Title}, Раскладка клавиш: {Key_layout}, Количество клавиш: {Key_count}");
         }
-        //public override bool Equals(object obj)
-        //{
-        //    Piano s = obj as Piano;
-        //    if (s != null)
-        //    {
-        //        return s.Key_layout == this.Key_layout && s.key_count == this.key_count && s.Title == this.Title;
-        //    }
-        //    else { return false; }
-        //}
+        public override bool Equals(object obj)
+        {
+            Piano s = obj as Piano;
+            if (s != null)
+            {
+                return s.Key_layout == this.Key_layout && s.key_count == this.key_count && s.Title == this.Title;
+            }
+            else { return false; }
+        }
         public override void Init()
         {
             base.Init();
