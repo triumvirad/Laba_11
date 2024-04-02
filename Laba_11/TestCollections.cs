@@ -1,10 +1,11 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Runtime.ExceptionServices;
 using System.Text;
 using System.Threading.Tasks;
 using ClassLibrary;
+
 namespace Laba_11
 {
     public class TestCollections
@@ -13,7 +14,7 @@ namespace Laba_11
         public Queue<string> col2 = new Queue<string>();
         public Dictionary<MusicalInstrument, Guitar> col3 = new Dictionary<MusicalInstrument, Guitar>();
         public Dictionary<string, Guitar> col4 = new Dictionary<string, Guitar>();
-        public Guitar? first, midddle, last, noexist;
+        public Guitar? first, middle, last, noexist;
         public TestCollections(int length)
         {
             for (int i = 0; i < length; i++)
@@ -32,7 +33,7 @@ namespace Laba_11
                     }
                     if (i == length / 2)
                     {
-                        midddle = new Guitar(guitar.Title, guitar.String_count1, guitar.id.number1);
+                        middle = new Guitar(guitar.Title, guitar.String_count1, guitar.id.number1);
                     }
                     if (i == length - 1)
                     {
