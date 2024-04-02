@@ -1,4 +1,4 @@
-﻿using ClassLibrary;
+using ClassLibrary;
 using System.Diagnostics;
 using System.Collections;
 using System.ComponentModel;
@@ -10,6 +10,8 @@ namespace Lab11
     {
         static void Main(string[] args)
         {
+            // !!ЧАСТЬ 1!!
+
             //#region Queue
 
             //Queue queue = new Queue();
@@ -81,6 +83,8 @@ namespace Lab11
             //Console.WriteLine(index);
 
             //#endregion Queue
+
+            // !!ЧАСТЬ 2!!
 
             //#region Stack
 
@@ -160,30 +164,70 @@ namespace Lab11
 
             //#endregion Stack
 
-            TestCollections st1 = new TestCollections(1000);
-            st1.col1.Contains(st1.first);
-            Stopwatch sw1 = new Stopwatch();
-            MusicalInstrument m1 = new MusicalInstrument();
-            m1.Init();
-            sw1.Restart();
-            bool okValue1 = st1.col1.Contains(m1);
-            sw1.Stop();
-            if (okValue1)
-            {
-                Console.WriteLine($"Найден за {sw1.ElapsedTicks}");
-            }
-            else
-            {
-                Console.WriteLine($"Не найден за {sw1.ElapsedTicks}");
-            }
+            // !!ЧАСТЬ 3!!
+
+            //TestCollections st1 = new TestCollections(1000);
+            //Stopwatch sw1 = new Stopwatch();
+            //sw1.Restart();
+            //bool okValue1 = st1.col1.Contains(st1.first);
+            //sw1.Stop();
+            //if (okValue1)
+            //{
+            //    Console.WriteLine($"Найден за {sw1.ElapsedTicks}");
+            //}
+            //else
+            //{
+            //    Console.WriteLine($"Не найден за {sw1.ElapsedTicks}");
+            //}
+            //sw1.Restart();
+            //bool okValue2 = st1.col1.Contains(st1.middle);
+            //sw1.Stop();
+            //if (okValue2)
+            //{
+            //    Console.WriteLine($"Найден за {sw1.ElapsedTicks}");
+            //}
+            //else
+            //{
+            //    Console.WriteLine($"Не найден за {sw1.ElapsedTicks}");
+            //}
+            //sw1.Restart();
+            //bool okValue3 = st1.col1.Contains(st1.last);
+            //sw1.Stop();
+            //if (okValue3)
+            //{
+            //    Console.WriteLine($"Найден за {sw1.ElapsedTicks}");
+            //}
+            //else
+            //{
+            //    Console.WriteLine($"Не найден за {sw1.ElapsedTicks}");
+            //}
+            //sw1.Restart();
+            //bool okValue4 = st1.col1.Contains(st1.noexist);
+            //sw1.Stop();
+            //if (okValue4)
+            //{
+            //    Console.WriteLine($"Найден за {sw1.ElapsedTicks}");
+            //}
+            //else
+            //{
+            //    Console.WriteLine($"Не найден за {sw1.ElapsedTicks}");
+            //}
 
             //TestCollections st2 = new TestCollections(1000);
-            //st2.col1.Contains(st2.midddle);
             //Stopwatch sw2 = new Stopwatch();
-            //MusicalInstrument m2 = new MusicalInstrument();
-            //m2.Init();
             //sw2.Restart();
-            //bool okValue2 = st2.col1.Contains(m2);
+            //bool okValue1 = st2.col2.Contains(st2.first.ToString());
+            //sw2.Stop();
+            //if (okValue1)
+            //{
+            //    Console.WriteLine($"Найден за {sw2.ElapsedTicks}");
+            //}
+            //else
+            //{
+            //    Console.WriteLine($"Не найден за {sw2.ElapsedTicks}");
+            //}
+            //sw2.Restart();
+            //bool okValue2 = st2.col2.Contains(st2.middle.ToString());
             //sw2.Stop();
             //if (okValue2)
             //{
@@ -193,16 +237,115 @@ namespace Lab11
             //{
             //    Console.WriteLine($"Не найден за {sw2.ElapsedTicks}");
             //}
+            //sw2.Restart();
+            //bool okValue3 = st2.col2.Contains(st2.last.ToString());
+            //sw2.Stop();
+            //if (okValue3)
+            //{
+            //    Console.WriteLine($"Найден за {sw2.ElapsedTicks}");
+            //}
+            //else
+            //{
+            //    Console.WriteLine($"Не найден за {sw2.ElapsedTicks}");
+            //}
+            //sw2.Restart();
+            //bool okValue4 = st2.col2.Contains(st2.noexist.ToString());
+            //sw2.Stop();
+            //if (okValue4)
+            //{
+            //    Console.WriteLine($"Найден за {sw2.ElapsedTicks}");
+            //}
+            //else
+            //{
+            //    Console.WriteLine($"Не найден за {sw2.ElapsedTicks}");
+            //}
 
             //TestCollections st3 = new TestCollections(1000);
-            //st3.col1.Contains(st3.last);
             //Stopwatch sw3 = new Stopwatch();
-            //MusicalInstrument m3 = new MusicalInstrument();
-            //m3.Init();
             //sw3.Restart();
-            //bool okValue3 = st3.col1.Contains(m3);
+            //bool okValue11 = st3.col3.ContainsKey(st3.first.GetBase());
             //sw3.Stop();
-            //if (okValue3)
+            //if (okValue11)
+            //{
+            //    Console.WriteLine($"Найден за {sw3.ElapsedTicks}");
+            //}
+            //else
+            //{
+            //    Console.WriteLine($"Не найден за {sw3.ElapsedTicks}");
+            //}
+            //sw3.Restart();
+            //bool okValue12 = st3.col3.ContainsValue(st3.first);
+            //sw3.Stop();
+            //if (okValue12)
+            //{
+            //    Console.WriteLine($"Найден за {sw3.ElapsedTicks}");
+            //}
+            //else
+            //{
+            //    Console.WriteLine($"Не найден за {sw3.ElapsedTicks}");
+            //}
+
+            //sw3.Restart();
+            //bool okValue21 = st3.col3.ContainsKey(st3.middle.GetBase());
+            //sw3.Stop();
+            //if (okValue11)
+            //{
+            //    Console.WriteLine($"Найден за {sw3.ElapsedTicks}");
+            //}
+            //else
+            //{
+            //    Console.WriteLine($"Не найден за {sw3.ElapsedTicks}");
+            //}
+            //sw3.Restart();
+            //bool okValue22 = st3.col3.ContainsValue(st3.middle);
+            //sw3.Stop();
+            //if (okValue12)
+            //{
+            //    Console.WriteLine($"Найден за {sw3.ElapsedTicks}");
+            //}
+            //else
+            //{
+            //    Console.WriteLine($"Не найден за {sw3.ElapsedTicks}");
+            //}
+
+            //sw3.Restart();
+            //bool okValue31 = st3.col3.ContainsKey(st3.last.GetBase());
+            //sw3.Stop();
+            //if (okValue11)
+            //{
+            //    Console.WriteLine($"Найден за {sw3.ElapsedTicks}");
+            //}
+            //else
+            //{
+            //    Console.WriteLine($"Не найден за {sw3.ElapsedTicks}");
+            //}
+            //sw3.Restart();
+            //bool okValue32 = st3.col3.ContainsValue(st3.last);
+            //sw3.Stop();
+            //if (okValue12)
+            //{
+            //    Console.WriteLine($"Найден за {sw3.ElapsedTicks}");
+            //}
+            //else
+            //{
+            //    Console.WriteLine($"Не найден за {sw3.ElapsedTicks}");
+            //}
+
+            //sw3.Restart();
+            //bool okValue41 = st3.col3.ContainsKey(st3.noexist.GetBase());
+            //sw3.Stop();
+            //if (okValue11)
+            //{
+            //    Console.WriteLine($"Найден за {sw3.ElapsedTicks}");
+            //}
+            //else
+            //{
+            //    Console.WriteLine($"Не найден за {sw3.ElapsedTicks}");
+            //}
+            //sw3.Restart();
+            //bool okValue42 = st3.col3.ContainsValue(st3.noexist);
+            //sw3.Stop();
+            //if (okValue12)
             //{
             //    Console.WriteLine($"Найден за {sw3.ElapsedTicks}");
             //}
@@ -212,14 +355,88 @@ namespace Lab11
             //}
 
             //TestCollections st4 = new TestCollections(1000);
-            //st4.col1.Contains(st4.noexist);
             //Stopwatch sw4 = new Stopwatch();
-            //MusicalInstrument m4 = new MusicalInstrument();
-            //m4.Init();
             //sw4.Restart();
-            //bool okValue4 = st4.col1.Contains(m4);
+            //bool okValue11 = st4.col4.ContainsKey(st4.first.GetBase().ToString());
             //sw4.Stop();
-            //if (okValue4)
+            //if (okValue11)
+            //{
+            //    Console.WriteLine($"Найден за {sw4.ElapsedTicks}");
+            //}
+            //else
+            //{
+            //    Console.WriteLine($"Не найден за {sw4.ElapsedTicks}");
+            //}
+            //sw4.Restart();
+            //bool okValue12 = st4.col4.ContainsValue(st4.first);
+            //sw4.Stop();
+            //if (okValue12)
+            //{
+            //    Console.WriteLine($"Найден за {sw4.ElapsedTicks}");
+            //}
+            //else
+            //{
+            //    Console.WriteLine($"Не найден за {sw4.ElapsedTicks}");
+            //}
+            //sw4.Restart();
+            //bool okValue21 = st4.col4.ContainsKey(st4.middle.GetBase().ToString());
+            //sw4.Stop();
+            //if (okValue11)
+            //{
+            //    Console.WriteLine($"Найден за {sw4.ElapsedTicks}");
+            //}
+            //else
+            //{
+            //    Console.WriteLine($"Не найден за {sw4.ElapsedTicks}");
+            //}
+            //sw4.Restart();
+            //bool okValue22 = st4.col4.ContainsValue(st4.middle);
+            //sw4.Stop();
+            //if (okValue12)
+            //{
+            //    Console.WriteLine($"Найден за {sw4.ElapsedTicks}");
+            //}
+            //else
+            //{
+            //    Console.WriteLine($"Не найден за {sw4.ElapsedTicks}");
+            //}
+            //sw4.Restart();
+            //bool okValue31 = st4.col4.ContainsKey(st4.last.GetBase().ToString());
+            //sw4.Stop();
+            //if (okValue11)
+            //{
+            //    Console.WriteLine($"Найден за {sw4.ElapsedTicks}");
+            //}
+            //else
+            //{
+            //    Console.WriteLine($"Не найден за {sw4.ElapsedTicks}");
+            //}
+            //sw4.Restart();
+            //bool okValue32 = st4.col4.ContainsValue(st4.last);
+            //sw4.Stop();
+            //if (okValue12)
+            //{
+            //    Console.WriteLine($"Найден за {sw4.ElapsedTicks}");
+            //}
+            //else
+            //{
+            //    Console.WriteLine($"Не найден за {sw4.ElapsedTicks}");
+            //}
+            //sw4.Restart();
+            //bool okValue41 = st4.col4.ContainsKey(st4.noexist.GetBase().ToString());
+            //sw4.Stop();
+            //if (okValue11)
+            //{
+            //    Console.WriteLine($"Найден за {sw4.ElapsedTicks}");
+            //}
+            //else
+            //{
+            //    Console.WriteLine($"Не найден за {sw4.ElapsedTicks}");
+            //}
+            //sw4.Restart();
+            //bool okValue42 = st4.col4.ContainsValue(st4.noexist);
+            //sw4.Stop();
+            //if (okValue12)
             //{
             //    Console.WriteLine($"Найден за {sw4.ElapsedTicks}");
             //}
