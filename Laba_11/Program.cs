@@ -136,7 +136,7 @@ namespace Lab11
             //Console.WriteLine($"Количество гитар в коллекции: {cnt1}");
             //Console.WriteLine($"Среднее количество струн всех гитар: {res}");
             //Console.WriteLine("StackCLONE");
-            //Stack cloneStack = new Stack();
+            //Stack<MusicalInstrument> cloneStack = new Stack<MusicalInstrument>();
             //foreach (MusicalInstrument item in satck)
             //{
             //    cloneStack.Push(item);
